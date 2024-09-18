@@ -1,0 +1,70 @@
+body {
+    margin: 0; /* Elimina el margen del body */
+    padding: 0; /* Elimina el padding del body */
+    }
+    
+    .sidemenu-container {
+        
+    width: 30%; /* Mantén el ancho deseado */
+    height: 100vh; /* Altura de la pantalla */
+    background-color: #90EE90; /* Color de fondo */
+    display: flex; /* Corrige el typo */
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos al inicio */
+    gap: 20px; /* Espacio entre elementos */
+    position: fixed; /* Mantiene el menú fijo */
+    top: 0; /* Alinea al inicio */
+    left: 0; /* Alinea al borde izquierdo */
+    transition: transform 0.3s ease-in-out;
+    }
+    
+    .items-container {
+    flex: 1; /* Permite que este contenedor ocupe el espacio disponible */
+    overflow-y: auto; /* Habilita el desplazamiento vertical si es necesario */
+    }
+    
+    .item {
+        font-weight: bold; /* Aplica negrita al texto */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin-left: 20px; /* Margen izquierdo */
+    
+    
+    }
+    
+    .item p {
+    width: 75%; /* Mantiene el ancho del texto */
+    text-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    
+    }
+    img{
+        height: 50px;
+    }
+    button{
+        background-color: white; /* Color de fondo */
+        color: black; /* Color del texto */
+        padding: 8px 16px; /* Espaciado interno */
+        text-align: center; /* Alineación del texto */
+        text-decoration: none; /* Sin subrayado */
+        display: inline-block; /* Para que se comporte como un bloque */
+        font-size: 14px; /* Tamaño de fuente */
+        margin: 2px 1px; /* Margen */
+        cursor: pointer; /* Cambia el cursor al pasar el ratón */
+        border: none; /* Sin borde */
+        border-radius: 8px; /* Bordes redondeados */
+        transition: background-color 0.3s ease; /* Efecto de transición */
+    }
+    .transparent-button {
+        background: none;  /* Elimina el fondo */
+        border: none;      /* Elimina el borde */
+        padding: 0;        /* Elimina el padding */
+        font-size: 20px;   /* Ajusta el tamaño de la fuente si es necesario */
+        cursor: pointer;   /* Mantiene el cursor de puntero */
+      }
+      
+    

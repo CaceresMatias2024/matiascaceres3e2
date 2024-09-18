@@ -1,0 +1,30 @@
+<button class="transparent-button" (click)="alternateVisibility()">→</button><section class="sidemenu-container"
+         [style.background-color]='theme'
+         [style.width]="widthMenu + '%'"
+         [style.transform]="visibleMenu == true ? 'translateX(0)' : 'translateX(-100%)'" 
+>
+    <div class="item">
+        <img src="https://i.pinimg.com/originals/48/b8/ba/48b8ba5a366337124e98bdc8299b0ba4.png" alt="image.png">
+        <p> {{userName}}</p>
+        <!-- Interpolacion activdad -->
+        <button class="transparent-button" (click)="alternateVisibility()">←</button>
+    </div>
+
+    <div class="item">
+        <p><span style="color:white" >❤️</span><span  onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'" >Dasheboard</span></p>
+
+    </div>
+
+    <div class="item">
+      <p><span style="color:white" >🧌</span><span  onMouseOver="this.style.color='red'" onMouseOut="this.style.color='black'" >Profile</span></p>
+    </div>
+
+    <div class="item">
+        <button class="btn" (click)=" setTheme(theme == '#7CC1CF' ? '#7E9EA5' : '#7CC1CF')" >Change color</button>
+
+    <button class="btn" (click)="setSize()">Change size</button>
+
+        <!-- Ejecutamos event binding -->
+    </div>
+
+</section>
